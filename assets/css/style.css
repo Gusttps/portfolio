@@ -77,6 +77,9 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
   max-width: 1050px;
   height: auto;
   margin: 1.5rem auto;

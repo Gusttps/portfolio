@@ -61,6 +61,7 @@ a {
 .portfolio {
     display: flex;
     flex-wrap: wrap;
+    order: -1;
     max-width: 1050px;
     height: auto;
     margin: 1.5rem auto;
