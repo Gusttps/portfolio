@@ -26,13 +26,65 @@ a {
     padding: .5rem 2rem;
     align-items: center;
 
+    @media only screen and (max-width: 68rem) {
+        padding: 0;
+    }
+
+    &__mobile-hamburger {
+        margin-top: 6px;
+
+        @media only screen and (min-width: 68rem) {
+            display: none;
+        }
+    }
+
+    &__mobile-menu {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        width: 95vw;
+        height: auto;
+        padding: 1rem;
+        font-size: 1.5rem;
+        background-color: #0B0B0B;
+        z-index: 1111;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        pointer-events: none;
+
+        a {
+            margin: .5rem 0;
+        }
+
+        &-open {
+            opacity: 1;
+        }
+    }
+
+    &__icons-wrapper {
+        display: flex;
+    }
+
     &__icons-container {
         display: flex;
         align-items: center;
 
-        img {
-            margin: 0 .2rem;
+        @media only screen and (max-width: 68rem) {
+            display: none;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 .3rem;
             cursor: pointer;
+            transition: all .2s ease-in-out;
+            
+            &:hover {
+                transform: translate(0, -3px);
+            }
         }
     }
 
@@ -51,6 +103,10 @@ a {
                 color: #171717;
             }
         }
+
+        @media only screen and (max-width: 68rem) {
+            display: none;
+        }
     }
 
     &__menu-projetos {
@@ -61,10 +117,17 @@ a {
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    order: -1;
     max-width: 1050px;
     height: auto;
     margin: 1.5rem auto;
+
+    @media only screen and (max-width: 68rem) {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 1.5rem auto;
+    }
 
     &__project {
         width: 470px;
@@ -74,6 +137,12 @@ a {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+
+        @media only screen and (max-width: 68rem) {
+            width: 340px;
+            height: auto;
+            margin: 2rem 1rem;
+        }
     }
 
     &__project-image {
@@ -81,11 +150,16 @@ a {
         border-radius: .48rem;
         width: 470px;
         height: auto;
+
+        @media only screen and (max-width: 68rem) {
+            width: 340px;
+        }
     }
 
     &__text-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         width: 470px;
         height: 264.5px;
@@ -97,6 +171,30 @@ a {
 
         &:hover {
             opacity: .9;
+        }
+
+        a {
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                transform: translate(0, -3px);
+            }
+        }
+
+        h2 {
+            margin-bottom: 0;
+        }
+
+        p {
+            max-width: 22rem;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 68rem) {
+            width: 340px;
+            height: auto;
         }
     }
 }
