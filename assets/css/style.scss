@@ -17,7 +17,6 @@ a {
 }
 
 .header {
-    width: 100%;
     height: 4.5rem;
     background-color: #0B0B0B;
     color: #FFFFFF;
@@ -43,7 +42,7 @@ a {
         position: absolute;
         flex-direction: column;
         align-items: center;
-        width: 95vw;
+        width: 100%;
         height: auto;
         padding: 1rem;
         font-size: 1.5rem;
@@ -95,12 +94,15 @@ a {
 
     &__menu {
         font-size: 1.1rem;
-        a {
+        display: flex;
+
+        div {
             margin: 0 .5rem;
             transition: all .2s ease-in;
 
             &:hover {
                 color: #171717;
+                cursor: pointer;
             }
         }
 
@@ -120,6 +122,10 @@ a {
     max-width: 1050px;
     height: auto;
     margin: 1.5rem auto;
+
+    &-hide {
+        display: none;
+    }
 
     @media only screen and (max-width: 68rem) {
         width: 100vw;
@@ -199,7 +205,35 @@ a {
     }
 }
 
-footer {
+.about {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 48rem;
+    margin: 5rem auto;
+
+    &__photo-container {
+        max-width: fit-content;
+
+        img {
+            max-width: 20rem;
+            border-radius: .6rem;
+        }
+    }
+
+    &__text-container {
+        margin-left: 2rem;
+        font-size: 1.4rem;
+        color: #FFFFFF;
+        font-weight: 300;
+
+        strong {
+            font-weight: 600;
+        }
+    }
+}
+
+.footer {
     height: 2rem;
     color: #FFFFFF;
     font-size: .85rem;
@@ -207,4 +241,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
