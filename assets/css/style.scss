@@ -58,6 +58,7 @@ a {
 
         &-open {
             opacity: 1;
+            pointer-events: inherit;
         }
     }
 
@@ -101,7 +102,7 @@ a {
             transition: all .2s ease-in;
 
             &:hover {
-                color: #171717;
+                transform: translate(0, -3px);
                 cursor: pointer;
             }
         }

@@ -10,6 +10,8 @@ const $aboutBttn = document.querySelector(".header__menu-sobre-mim");
 const $about = document.querySelector(".about");
 const $projects = document.querySelector(".header__menu-projetos");
 const $footer = document.querySelector(".footer");
+const $aboutBttnMob = document.querySelector(".header__mobile-menu-sobre-mim");
+const $projectsBttnMob = document.querySelector(".header__mobile-menu-projetos");
 
 // toggle mobile menu
 
@@ -17,7 +19,7 @@ $hamburger.addEventListener("click", _ => {
             $mobileMenu.classList.toggle('header__mobile-menu-open');
         })
 
-// about
+// about and projects desktop display
 
 $aboutBttn.addEventListener("click", _ => {
         $portfolio.classList.remove("portfolio-hide");
@@ -37,6 +39,11 @@ $projects.addEventListener("click", _ => {
         $footer.style.position = 'relative';
 });
 
+// about and projects display mobile
+
+$aboutBttnMob.addEventListener("click", _ => {
+    console.log("oi")
+});
 
 // create project
     let markup = "";
