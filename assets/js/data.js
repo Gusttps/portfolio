@@ -1,9 +1,15 @@
 export const projects = [
 {
+    "title":"Perfil em App de Live Stream",
+    "description":"Tela de perfil em aplicativo com propósito de live stream de jogos.",
+    "image":"./projects/images/DailyUI-006-UserProfile.jpg",
+        "link": "https://www.behance.net/gallery/124758653/Live-Streaming-Platform"
+},
+{
     "title":"Apresentação Carteira Digital",
     "description":"Criação de interface para fintech de beneficios corporativos.",
     "image":"./projects/images/E-wallet.png",
-        "link": "https://www.behance.net/gallery/124258047/E-wallet-Carteira-Digital"
+    "link": "https://www.behance.net/gallery/124258047/E-wallet-Carteira-Digital"
 },
 {
     "title":"Sign Up",

@@ -306,6 +306,11 @@ a {
   font-weight: 300;
 }
 
+.about__text-container a {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 .about__text-container strong {
   font-weight: 600;
 }
